@@ -1,0 +1,13 @@
+<br>
+<br>
+  <div class ="text-center">
+    <%= form_for (@article), html:{
+      class: 'form-horizonal'} do
+        |f| %>
+      <%= f.label :title %>
+      <%= f.text_field :title %>
+      <%= f.label :content %>
+      <%= f.text_field :content %>
+      <%= f.submit %>
+  <% end %>
+</div>
